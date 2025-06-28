@@ -1,94 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pareschi-cs | Dev de Sistemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #121212;
-      --text: #f0f0f0;
-      --primary: #3498db;
-      --card-bg: #1f1f1f;
+      --bg: #0f0f1a;
+      --text: #e0e0ff;
+      --primary: #00ffff;
+      --secondary: #ff00ff;
+      --card-bg: #1a1a2e;
+      --neon: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
     }
 
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Orbitron', sans-serif;
       background-color: var(--bg);
       color: var(--text);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #000;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
       padding: 2rem;
       text-align: center;
+      color: #000;
+      text-shadow: var(--neon);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      color: var(--primary);
+      font-size: 3rem;
     }
 
     section {
-      padding: 3rem 1.5rem;
-      max-width: 900px;
+      padding: 3rem 2rem;
+      max-width: 1000px;
       margin: auto;
     }
 
     .section-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
       border-left: 5px solid var(--primary);
       padding-left: 1rem;
+      text-shadow: var(--neon);
     }
 
     .card {
       background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0ff2;
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
     }
 
     .card h3 {
-      margin-top: 0;
       color: var(--primary);
+      margin-top: 0;
+      text-shadow: var(--neon);
     }
 
     .contact {
-      background-color: #000;
+      background: linear-gradient(90deg, var(--secondary), var(--primary));
       text-align: center;
-      padding: 2rem;
+      padding: 3rem;
     }
 
     .contact a {
       display: inline-block;
-      margin: 0.5rem;
-      color: var(--primary);
+      margin: 1rem;
+      color: #000;
+      background: var(--text);
+      padding: 1rem 2rem;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      box-shadow: var(--neon);
+      transition: background 0.3s;
+    }
+
+    .contact a:hover {
+      background: var(--primary);
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.8rem;
-      color: #888;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #050510;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pareschi-cs</h1>
-    <p>Desenvolvedor de Sistemas para Negócios Locais</p>
+    <p>Desenvolvedor de Sistemas com Visual Futurista</p>
   </header>
 
   <section>
     <h2 class="section-title">Sobre Mim</h2>
-    <p>Sou Junior Pareschi, desenvolvedor de sistemas com foco em soluções rápidas e profissionais para pequenos comércios e empresas. Crio sistemas completos, fáceis de usar e com design moderno, ideais para quem quer organizar o negócio e vender mais.</p>
+    <p>Sou Junior Pareschi, criador de sistemas modernos com visual cyberpunk para negócios locais e autônomos. Trabalho com tecnologia de ponta, interfaces intuitivas e soluções reais para lava jato, escolas, barbearias e muito mais.</p>
   </section>
 
   <section>
@@ -96,34 +117,34 @@
 
     <div class="card">
       <h3>EduControl - Sistema Escolar</h3>
-      <p>Ideal para escolas e cursos. Inclui:</p>
+      <p>Ideal para instituições de ensino que buscam controle total com visual futurista:</p>
       <ul>
-        <li>Cadastro de alunos, turmas e professores</li>
-        <li>Lançamento de notas e frequência</li>
-        <li>Relatórios acadêmicos e financeiros</li>
+        <li>Cadastro inteligente de alunos, turmas e professores</li>
+        <li>Notas, frequência e dashboards visuais</li>
+        <li>Relatórios acadêmicos e financeiros automáticos</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>LavaJatoManager</h3>
-      <p>Perfeito para controle de serviços de lava jato:</p>
+      <p>Sistema completo para gestão de lava jatos com estilo e performance:</p>
       <ul>
-        <li>Cadastro de clientes e veículos</li>
-        <li>Ordem de serviço com status (entrada, em lavagem, finalizado)</li>
-        <li>Relatórios de atendimento e faturamento</li>
+        <li>Cadastro rápido de clientes e veículos com busca dinâmica</li>
+        <li>Status de ordem de serviço em tempo real</li>
+        <li>Relatórios gerenciais com visualização gráfica</li>
       </ul>
     </div>
   </section>
 
   <section class="contact">
-    <h2>Entre em Contato</h2>
+    <h2 class="section-title">Entre em Contato</h2>
     <a href="https://wa.me/5527992976981" target="_blank">💬 WhatsApp</a>
     <a href="mailto:dev.pareschi@outlook.com">📧 Email</a>
     <a href="https://instagram.com/paresqui.jr" target="_blank">📷 Instagram</a>
   </section>
 
   <footer>
-    © 2025 Pareschi-cs. Todos os direitos reservados.
+    © 2025 Pareschi-cs. Todos os direitos reservados. <br> Visual cyberpunk desenvolvido por Junior Pareschi.
   </footer>
 </body>
 </html>
