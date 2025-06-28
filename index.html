@@ -4,112 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pareschi-cs | Dev de Sistemas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0f0f1a;
-      --text: #e0e0ff;
-      --primary: #00ffff;
-      --secondary: #ff00ff;
-      --card-bg: #1a1a2e;
-      --neon: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      --bg: #0a0f0a;
+      --text: #00ff00;
+      --card-bg: #111;
+      --border: #00aa00;
     }
 
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Source Code Pro', monospace;
+      background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat;
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      background-color: #000;
       padding: 2rem;
       text-align: center;
-      color: #000;
-      text-shadow: var(--neon);
+      border-bottom: 2px solid var(--border);
+      box-shadow: 0 0 20px #00ff0070;
     }
 
     header h1 {
       margin: 0;
-      font-size: 3rem;
+      font-size: 2.8rem;
+      letter-spacing: 0.1em;
     }
 
     section {
       padding: 3rem 2rem;
-      max-width: 1000px;
+      max-width: 960px;
       margin: auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ff0040;
+      margin-bottom: 2rem;
     }
 
     .section-title {
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
-      border-left: 5px solid var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--text);
       padding-left: 1rem;
-      text-shadow: var(--neon);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
 
     .card {
-      background: var(--card-bg);
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #0ff2;
-      margin-bottom: 2.5rem;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.02);
+      background: #000;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      box-shadow: inset 0 0 10px #00ff0033;
     }
 
     .card h3 {
-      color: var(--primary);
+      color: var(--text);
       margin-top: 0;
-      text-shadow: var(--neon);
+      font-size: 1.4rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
     }
 
     .contact {
-      background: linear-gradient(90deg, var(--secondary), var(--primary));
       text-align: center;
-      padding: 3rem;
+      background: #000;
+      padding: 2rem;
+      border-top: 2px solid var(--border);
     }
 
     .contact a {
       display: inline-block;
-      margin: 1rem;
-      color: #000;
-      background: var(--text);
-      padding: 1rem 2rem;
-      border-radius: 10px;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 4px;
       text-decoration: none;
-      font-weight: bold;
-      box-shadow: var(--neon);
-      transition: background 0.3s;
+      transition: all 0.3s;
     }
 
     .contact a:hover {
-      background: var(--primary);
+      background-color: var(--text);
+      color: #000;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem;
       font-size: 0.9rem;
-      background: #050510;
-      color: #666;
+      background-color: #000;
+      color: #008800;
+      border-top: 1px solid var(--border);
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pareschi-cs</h1>
-    <p>Desenvolvedor de Sistemas com Visual Futurista</p>
+    <p>Desenvolvimento de Sistemas Sob Medida</p>
   </header>
 
   <section>
     <h2 class="section-title">Sobre Mim</h2>
-    <p>Sou Junior Pareschi, criador de sistemas modernos com visual cyberpunk para negócios locais e autônomos. Trabalho com tecnologia de ponta, interfaces intuitivas e soluções reais para lava jato, escolas, barbearias e muito mais.</p>
+    <p>Sou Junior Pareschi, desenvolvedor com experiência na criação de sistemas personalizados para empresas e pequenos negócios. Entrego soluções digitais estáveis, seguras e fáceis de usar, com foco em produtividade, organização e crescimento.</p>
   </section>
 
   <section>
@@ -117,34 +128,32 @@
 
     <div class="card">
       <h3>EduControl - Sistema Escolar</h3>
-      <p>Ideal para instituições de ensino que buscam controle total com visual futurista:</p>
       <ul>
-        <li>Cadastro inteligente de alunos, turmas e professores</li>
-        <li>Notas, frequência e dashboards visuais</li>
-        <li>Relatórios acadêmicos e financeiros automáticos</li>
+        <li>Cadastro de alunos, turmas e professores</li>
+        <li>Lançamento de notas e frequência</li>
+        <li>Relatórios acadêmicos e financeiros</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>LavaJatoManager</h3>
-      <p>Sistema completo para gestão de lava jatos com estilo e performance:</p>
       <ul>
-        <li>Cadastro rápido de clientes e veículos com busca dinâmica</li>
-        <li>Status de ordem de serviço em tempo real</li>
-        <li>Relatórios gerenciais com visualização gráfica</li>
+        <li>Cadastro de clientes e veículos</li>
+        <li>Ordem de serviço com status em tempo real</li>
+        <li>Relatórios gerenciais e controle de faturamento</li>
       </ul>
     </div>
   </section>
 
   <section class="contact">
-    <h2 class="section-title">Entre em Contato</h2>
+    <h2 class="section-title">Contato</h2>
     <a href="https://wa.me/5527992976981" target="_blank">💬 WhatsApp</a>
     <a href="mailto:dev.pareschi@outlook.com">📧 Email</a>
     <a href="https://instagram.com/paresqui.jr" target="_blank">📷 Instagram</a>
   </section>
 
   <footer>
-    © 2025 Pareschi-cs. Todos os direitos reservados. <br> Visual cyberpunk desenvolvido por Junior Pareschi.
+    © 2025 Pareschi-cs. Todos os direitos reservados. Desenvolvido por Junior Pareschi.
   </footer>
 </body>
 </html>
