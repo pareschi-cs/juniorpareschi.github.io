@@ -1,21 +1,18 @@
-Pular para o conteúdo
-Histórico de chats
-
-Você disse:
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pareschi-cs | Soluções Digitais Profissionais</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Junior Pareschi | Desenvolvimento de Sistemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #00ff88;
-      --background: #0b0f10;
-      --card: #12181b;
-      --text: #e0f0e9;
-      --muted: #889e94;
+      --bg: #1e1e1e;
+      --surface: #252526;
+      --primary: #007acc;
+      --accent: #00ffea;
+      --text: #d4d4d4;
+      --muted: #808080;
     }
 
     * {
@@ -25,372 +22,153 @@ Você disse:
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
+      font-family: 'JetBrains Mono', monospace;
+      background: url('https://www.transparenttextures.com/patterns/cubes.png'), #1e1e1e;
+      background-attachment: fixed;
       color: var(--text);
       line-height: 1.6;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 4rem 2rem;
-      text-align: center;
-      backdrop-filter: blur(4px);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      color: var(--primary);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: var(--muted);
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 960px;
-      margin: auto;
-      background-color: rgba(18, 24, 27, 0.9);
-      border-radius: 12px;
-      margin-bottom: 3rem;
-      box-shadow: 0 0 20px #00000066;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      border-left: 5px solid var(--primary);
-      padding-left: 1rem;
-      color: var(--primary);
-    }
-
-    .card {
-      background: #1b252a;
-      padding: 2rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 15px #00ff8840;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      padding-left: 1rem;
-      margin-bottom: 0.5rem;
-      position: relative;
-    }
-
-    ul li::before {
-      content: '✔';
-      color: var(--primary);
-      position: absolute;
-      left: 0;
-    }
-
-    .contact {
-      text-align: center;
+      background-color: #000000dd;
       padding: 3rem 2rem;
-      background: rgba(0, 0, 0, 0.85);
-      border-radius: 10px;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background: var(--primary);
-      color: #000;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .contact a:hover {
-      background: #00cc6a;
-    }
-
-    footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background-color: #0a0f0f;
-      color: var(--muted);
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Pareschi-cs</h1>
-    <p>Desenvolvimento de sistemas sob medida para negócios modernos</p>
-  </header>
-
-  <section>
-    <h2 class="section-title">Sobre Mim</h2>
-    <p>Sou Junior Pareschi, desenvolvedor focado na criação de sistemas completos e personalizados, com interface moderna, segurança, desempenho e escalabilidade. Atendo empresas e empreendedores que buscam soluções digitais eficientes para organizar processos e impulsionar seus resultados.</p>
-  </section>
-
-  <section>
-    <h2 class="section-title">Sistemas em Destaque</h2>
-
-    <div class="card">
-      <h3>EduControl - Sistema Escolar</h3>
-      <ul>
-        <li>Gestão de alunos, turmas e professores</li>
-        <li>Lançamento de notas, presenças e boletins</li>
-        <li>Relatórios administrativos e financeiros</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>LavaJatoManager</h3>
-      <ul>
-        <li>Cadastro de clientes, veículos e serviços</li>
-        <li>Ordem de serviço com histórico e status</li>
-        <li>Relatórios e controle financeiro completo</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2 class="section-title">Contato</h2>
-    <a href="https://wa.me/5527992976981" target="_blank">💬 WhatsApp</a>
-    <a href="mailto:dev.pareschi@outlook.com">📧 Email</a>
-    <a href="https://instagram.com/paresqui.jr" target="_blank">📷 Instagram</a>
-  </section>
-
-  <footer>
-    © 2025 Pareschi-cs. Todos os direitos reservados. Desenvolvido por Junior Pareschi.
-  </footer>
-</body>
-</html> esta ficando profissional mas quero um estilo visual studio, com tudo que tem direito imagens wallpaer, textos profissionais, especifique mais as funcionalidades dos sistemas, de todos os sistemas que ja fiz, capriche
-O ChatGPT disse:
-Memória salva atualizada
-Ótimo, Junior! Vou ajustar seu site com estilo inspirado no Visual Studio — escuro, sofisticado, com elementos modernos e técnicos, além de destacar com mais detalhes e profissionalismo os sistemas que você desenvolveu.
-
-Aqui vai a versão aprimorada do seu site com:
-
-Design estilo Visual Studio (com tons escuros e neon);
-
-Textos mais profissionais e completos;
-
-Wallpapers técnicos com visual moderno;
-
-Descrições detalhadas de todos os sistemas que você mencionou até agora.
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pareschi-cs | Soluções Digitais Profissionais</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #22ffcc;
-      --background: #0d1117;
-      --card: #161b22;
-      --text: #c9d1d9;
-      --muted: #8b949e;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: url('https://images.unsplash.com/photo-1581090700227-1e8e1802031c?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: var(--text);
-    }
-
-    header {
-      background: linear-gradient(to right, #0d1117dd, #161b22dd);
-      padding: 4rem 2rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-      box-shadow: 0 2px 10px #000;
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
-      font-size: 3.2rem;
-      color: var(--primary);
+      font-size: 2.5rem;
+      color: var(--accent);
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: var(--muted);
     }
 
-    section {
-      padding: 4rem 2rem;
+    main {
       max-width: 1000px;
       margin: auto;
-      background-color: rgba(22, 27, 34, 0.92);
-      border-radius: 12px;
-      margin-bottom: 3rem;
-      box-shadow: 0 0 25px #00ffe566;
+      padding: 2rem;
+    }
+
+    section {
+      background-color: var(--surface);
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00000088;
     }
 
     .section-title {
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-      border-left: 5px solid var(--primary);
+      font-size: 1.5rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
       padding-left: 1rem;
-      color: var(--primary);
-    }
-
-    .card {
-      background: var(--card);
-      padding: 2rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 20px #00ffcc30;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.02);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: var(--primary);
       margin-bottom: 1rem;
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .card {
+      margin-top: 1rem;
     }
 
-    ul li {
-      padding-left: 1rem;
+    .card h3 {
+      color: var(--accent);
       margin-bottom: 0.5rem;
-      position: relative;
-      line-height: 1.5;
     }
 
-    ul li::before {
-      content: '➤';
+    .card ul {
+      margin-left: 1rem;
+    }
+
+    .card ul li::marker {
       color: var(--primary);
-      position: absolute;
-      left: 0;
     }
 
     .contact {
       text-align: center;
-      padding: 3rem 2rem;
-      background: rgba(13, 17, 23, 0.95);
-      border-radius: 10px;
-      box-shadow: 0 0 15px #00ffcc20;
+      padding-top: 1rem;
     }
 
     .contact a {
-      display: inline-block;
       margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1rem;
       background: var(--primary);
-      color: #000;
-      font-weight: bold;
-      border-radius: 6px;
+      color: #fff;
       text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .contact a:hover {
-      background: #00ccaa;
+      border-radius: 4px;
+      display: inline-block;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
       font-size: 0.9rem;
-      background-color: #0d1117;
       color: var(--muted);
+      padding: 2rem 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Pareschi-cs</h1>
-    <p>Soluções de software sob medida com design moderno e arquitetura sólida</p>
+    <h1>Junior Pareschi</h1>
+    <p>Desenvolvimento de Sistemas | Soluções Digitais Profissionais</p>
   </header>
 
-  <section>
-    <h2 class="section-title">Sobre Mim</h2>
-    <p>Sou Junior Pareschi, desenvolvedor full stack especializado em sistemas personalizados para empresas, com foco em performance, segurança, usabilidade e escalabilidade. Crio soluções completas, do front-end ao banco de dados, atendendo negócios que buscam automação de processos, controle interno e visual profissional.</p>
-  </section>
+  <main>
+    <section>
+      <h2 class="section-title">Quem sou eu</h2>
+      <p>Sou Junior Pareschi, desenvolvedor de sistemas com foco em soluções sob medida para empresas, prestadores de serviço e organizações. Trabalho com desenvolvimento completo — da lógica ao design — aplicando boas práticas de arquitetura, usabilidade, segurança e escalabilidade. Meu objetivo é transformar demandas reais em sistemas robustos, intuitivos e visualmente profissionais.</p>
+    </section>
 
-  <section>
-    <h2 class="section-title">Sistemas Desenvolvidos</h2>
+    <section>
+      <h2 class="section-title">Projetos em Destaque</h2>
 
-    <div class="card">
-      <h3>EduControl - Sistema Escolar Completo</h3>
-      <ul>
-        <li>Cadastro completo de alunos, professores, turmas, disciplinas e responsáveis</li>
-        <li>Módulo de lançamento de notas, frequência, boletins e diários de classe</li>
-        <li>Emissão de relatórios pedagógicos, administrativos e financeiros</li>
-        <li>Interface moderna com painel do professor, secretaria e direção</li>
-      </ul>
-    </div>
+      <div class="card">
+        <h3>EduControl — Sistema de Gestão Escolar</h3>
+        <p>Plataforma educacional completa para escolas de pequeno e médio porte. Foco em controle, organização e eficiência administrativa.</p>
+        <ul>
+          <li>Cadastro e gerenciamento de alunos, professores, turmas e disciplinas</li>
+          <li>Lançamento e consulta de notas, presenças, boletins e diários de classe</li>
+          <li>Painel da secretaria, gestão pedagógica e relatórios administrativos</li>
+          <li>Controle financeiro integrado com mensalidades e cobranças</li>
+        </ul>
+      </div>
 
-    <div class="card">
-      <h3>LavaJatoManager - Gestão de Estética Automotiva</h3>
-      <ul>
-        <li>Ordem de serviço com histórico completo por veículo e cliente</li>
-        <li>Cadastro de clientes, veículos, serviços, pacotes e formas de pagamento</li>
-        <li>Controle financeiro com relatórios de caixa, vendas e faturamento</li>
-        <li>Agendamento via WhatsApp com horários disponíveis e confirmação automática</li>
-        <li>Emissão de NFC-e e integração com impressoras térmicas</li>
-      </ul>
-    </div>
+      <div class="card">
+        <h3>LavaJatoManager — Gestão de Estética Automotiva</h3>
+        <p>Sistema especializado para lava-jatos e oficinas, projetado para automatizar o atendimento e melhorar o controle financeiro.</p>
+        <ul>
+          <li>Cadastro completo de clientes, veículos, serviços e pacotes</li>
+          <li>Ordem de serviço com histórico de atendimento, status e recibos</li>
+          <li>Relatórios de caixa, vendas e fluxo financeiro detalhado</li>
+          <li>Agendamento de serviços com integração via WhatsApp</li>
+          <li>Suporte a emissão de notas fiscais (NFC-e) e integração com impressoras</li>
+        </ul>
+      </div>
 
-    <div class="card">
-      <h3>RadarTask - Gerenciador de Projetos Pessoais</h3>
-      <ul>
-        <li>Dashboard com calendário, tarefas, lembretes e metas</li>
-        <li>Etiquetas e categorias inteligentes para organização por área</li>
-        <li>Relatórios de produtividade e modo “foco” com cronômetro</li>
-        <li>Modo escuro/claro com troca automática ou manual</li>
-        <li>Integração com Google Agenda, Notion e Trello (opcional)</li>
-      </ul>
-    </div>
-  </section>
+      <div class="card">
+        <h3>RadarTask — Produtividade e Gestão Pessoal</h3>
+        <p>Aplicação voltada para organização pessoal e planejamento de metas, ideal para autônomos, criativos e profissionais multitarefa.</p>
+        <ul>
+          <li>Dashboard com tarefas, projetos, lembretes, calendário e metas</li>
+          <li>Organização por etiquetas, categorias e status de andamento</li>
+          <li>Relatórios de produtividade e análise de foco</li>
+          <li>Modo escuro/claro e layout adaptado para desktop</li>
+          <li>Integração opcional com Google Agenda, Notion e outras ferramentas</li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="contact">
-    <h2 class="section-title">Entre em Contato</h2>
-    <a href="https://wa.me/5527992976981" target="_blank">💬 WhatsApp</a>
-    <a href="mailto:dev.pareschi@outlook.com">📧 Email</a>
-    <a href="https://instagram.com/paresqui.jr" target="_blank">📷 Instagram</a>
-  </section>
+    <section class="contact">
+      <h2 class="section-title">Contato</h2>
+      <a href="https://wa.me/5527992976981">WhatsApp</a>
+      <a href="mailto:dev.pareschi@outlook.com">Email</a>
+      <a href="https://instagram.com/paresqui.jr" target="_blank">Instagram</a>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Pareschi-cs. Todos os direitos reservados. Desenvolvido por Junior Pareschi.
+    © 2025 Junior Pareschi. Todos os direitos reservados.
   </footer>
 </body>
 </html>
-Se quiser incluir um carrossel de imagens, animações ou exemplos com printscreen dos sistemas, posso adicionar isso com JavaScript ou bibliotecas como AOS ou Swiper. Deseja esse próximo passo também?
-
-Ou prefere primeiro ajustar mais o conteúdo e textos antes de avançar no visual?
-
-
-
-
-Nenhum arquivo escolhidoNenhum arquivo escolhido
-O ChatGPT pode cometer erros. Considere verificar informações importantes.
